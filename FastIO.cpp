@@ -16,6 +16,9 @@ void fastScan(int &num)
 
 	for(; (c>='0' && c<='9');c=getchar_unlocked())
 		num = num * 10 + c - '0';
+
+	if(negative) num = - num;
+	
 }
 
 int main(){
